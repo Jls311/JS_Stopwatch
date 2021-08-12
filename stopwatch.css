@@ -1,0 +1,236 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+height: 100vh;
+background-color: #1bb1af;;
+display: flex;
+transition: background 0.2s linear;
+
+}
+
+.dark {
+    background-color:rgb(43, 44, 49) ;
+}
+
+
+.container {
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border-radius: 50px;
+    background: #1bb1af;
+    box-shadow:  
+    20px 20px 60px #179695,
+    -20px -20px 60px #1fccc9;
+    transition: background 0.2s linear;
+    
+    
+}
+
+.dark .container {
+    border-radius: 50px;
+background: #2d3339;
+box-shadow:  20px 20px 42px #1a1d20,
+-20px -20px 42px #404952;
+}
+
+.timer{
+    font-size: 76px;
+    font-weight: lighter;
+    color: blanchedalmond;
+    width: 410px;
+    padding-left: 20px;
+}
+
+.bottompart{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btns{
+    width: 400px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.btns button{
+    width: 80px;
+    height: 80px;
+    background-color:  rgb(15, 97, 173);
+    color: blanchedalmond;
+    border: none;
+    border-radius: 50%;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0px 20px 30px rgb(0, 0, 0, 0, 0.5);
+}
+.btns button:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(65, 112, 252);
+}
+
+.btns .toggle {
+    transition: all 0.3s ease;
+    background-color: rgb(7, 133, 105);
+    z-index: 1;
+}
+
+.btns .toggle:hover {
+    transition: all 0.3s ease;
+    background-color: rgb(13, 175, 140);
+    z-index: 1;
+}
+
+.btns .toggle:active,
+.btns .reset:active,
+.btns .lap:active,{
+    transform: scale(0.9);
+}
+
+.btns .toggle.on{
+    background-color: rgb(238, 91, 65);
+}
+
+.btns .reset, 
+.btns . lap {
+    transition: all 0.3s ease;
+    
+}
+
+.lap_box{
+    width:200px;
+    height: 200px;
+    color: rgb(61, 52, 52);
+    padding-left: 30px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    border-radius: 50px;
+    background: #1bb1af;
+    box-shadow:  
+    -20px -20px 60px #179695,
+    20px 20px 60px #1fccc9;
+    transition: background 0.2s linear;
+}
+
+.dark .lap_box{
+    color: blanchedalmond;
+    border-radius: 50px;
+background: #2d3339;
+box-shadow:  20px 20px 42px #1a1d20,
+-20px -20px 42px #404952;
+}
+
+.lapItem {
+    width: 120px;
+    height: 30px;
+    font-size: 18px;
+    
+    margin-bottom: 5px;
+}
+
+
+
+
+.label {
+    background-color: black;
+    display: flex;
+    border-radius: 50px;
+    height: 26px;
+    width: 60px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+    transform: scale(1.5);
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.ball{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 23px;
+    width: 23px;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+}
+
+.checkbox{
+    opacity: 0;
+    position:absolute;
+    
+}
+
+.checkbox:checked + label .ball{
+    transform: translateX(32px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
